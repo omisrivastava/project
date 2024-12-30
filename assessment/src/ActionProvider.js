@@ -8,7 +8,7 @@ class ActionProvider {
 
   async handleQuery(query) {
     try {
-      const response = await axios.post("http://localhost:5000/resume-query", {
+      const response = await axios.post("https://omiresume-api.onrender.com/resume-query", {
         question: query,
       });
 
